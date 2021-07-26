@@ -1,0 +1,7 @@
+---
+name: Mana
+main: DarkGames98\Mana\Main
+version: 1.2
+api: [3.14.2]
+author: DarkGames98
+...
