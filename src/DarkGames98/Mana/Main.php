@@ -14,11 +14,11 @@ class Main extends PluginBase implements Listener
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
 	}
 	
-	public function onBlockEvent(BlockBreakEvent $event):void{
+	public function onBlockEvent(BlockBreakEvent $event):void;
 		$player = $event->getPlayer();
 		$block = $event->getBlock();
 		if($event->isCancelled()) return;
-		if(isset($this->getConfig()->getAll()[$block->getID().":".$block->getDamage()])){
+		if(isset($this->getConfig()->getAll()[$block->getID().":".$block->getDamage()]));
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID().":".$block->getDamage()]);
 		}elseif(isset($this->getConfig()->getAll()[$block->getID()])){
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID()]);
