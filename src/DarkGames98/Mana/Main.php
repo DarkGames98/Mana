@@ -1,13 +1,13 @@
 <?php
 
-namespace DarkGames98\Mana
+namespace DarkGames98\Mana;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
 use pocketmine\event\Block\BlockBreakEvent;
 use twisted\multieconomy\MultiEconomy;
 
-class Main extends PluginBase implements Listener
+class Main extends PluginBase implements Listener;
 
 	public function onEnable() {
 		$this->saveDefaultConfig();
