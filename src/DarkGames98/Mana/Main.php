@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\BlockBreakEvent;
 use twisted\multieconomy\MultiEconomy;
 
-class Main extends PluginBase implements Listener {
+class Main extends PluginBase implements Listener
 
 	public function onEnable() {
 		$this->saveDefaultConfig();
