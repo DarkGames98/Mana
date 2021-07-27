@@ -7,7 +7,7 @@ use pocketmine\event\Listener;
 use pocketmine\event\Block\BlockBreakEvent;
 use twisted\multieconomy\MultiEconomy;
 
-class Main extends PluginBase implements Listener;
+class Main extends PluginBase implements Listener
 
 	public function onEnable() {
 		$this->saveDefaultConfig();
@@ -20,7 +20,7 @@ class Main extends PluginBase implements Listener;
 		if($event->isCancelled()) return;
 		if(isset($this->getConfig()->getAll()[$block->getID().":".$block->getDamage()]));
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID().":".$block->getDamage()]);
-		elseif(isset($this->getConfig()->getAll()[$block->getID()])){
+		elseif(isset($this->getConfig()->getAll()[$block->getID()]));
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID()]);
 		}
 	}
