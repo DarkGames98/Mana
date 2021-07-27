@@ -1,13 +1,5 @@
-#
-# 
-#                                               
-#                                               
-#
-# 
-# id: mana
-# or
 # 'id:meta': mana
-4: 0.5
+4: 0.5 # the first number is the item id so you do 4: 0.5 the 0.5 gives the mana amount when block is broken
 87: 1
 16: 2
 15: 3
