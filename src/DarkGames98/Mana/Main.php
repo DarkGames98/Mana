@@ -4,9 +4,9 @@ namespace DarkGames98\Mana;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
-use pocketmine\event\block\BlockBreakEvent;
-
+use pocketmine\event\BlockBreakEvent;
 use twisted\multieconomy\MultiEconomy;
+
 class Main extends PluginBase implements Listener
 
 	public function onEnable() {
