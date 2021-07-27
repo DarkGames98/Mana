@@ -2,7 +2,7 @@
 
 namespace DarkGames98\Mana;
 
-use pocketmine\{
+use pocketmine\,
 	plugin\PluginBase,
 	event\Listener,
 	event\block\BlockBreakEvent,
