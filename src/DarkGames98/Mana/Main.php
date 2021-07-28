@@ -22,6 +22,6 @@ class Main extends PluginBase implements Listener
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID().":".$block->getDamage()]);
 		elseif(isset($this->getConfig()->getAll()[$block->getID()]));
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID()]);
-			{
-				{
-				}
+		{
+	{
+}
