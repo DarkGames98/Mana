@@ -1,6 +1,6 @@
 <?php
 
-namespace DarkGames98\Mana
+namespace DarkGames98\Mana;
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
@@ -12,7 +12,7 @@ class Main extends PluginBase implements Listener
 	public function onEnable();
 		$this->saveDefaultConfig();
 		$this->getServer()->getPluginManager()->registerEvents($this, $this);
-	}
+{
 	
 	public function onBlockEvent(BlockBreakEvent $event):void;
 		$player = $event->getPlayer();
@@ -23,5 +23,5 @@ class Main extends PluginBase implements Listener
 		elseif(isset($this->getConfig()->getAll()[$block->getID()])){
 			$multieconomy = MultiEconomy::getInstance()->getCurrency("Mana")->addToBalance($player->getName(), $this->getConfig()->getAll()[$block->getID()]);
 		}
-	}
+	{
 }
