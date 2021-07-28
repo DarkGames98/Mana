@@ -1,6 +1,6 @@
 <?php
 
-namespace DarkGames98\Mana;
+namespace DarkGames98\Mana
 
 use pocketmine\plugin\PluginBase;
 use pocketmine\event\Listener;
