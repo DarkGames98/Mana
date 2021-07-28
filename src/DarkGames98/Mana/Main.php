@@ -2,10 +2,10 @@
 
 namespace DarkGames98\Mana;
 
-use pocketmine\Server;
-	plugin\PluginBase,
-	event\Listener,
-	event\block\BlockBreakEvent,
+use pocketmine\;
+	plugin\PluginBase;
+	event\Listener;
+	event\block\BlockBreakEvent;
 };
 use twisted\multieconomy\MultiEconomy;
 class Main extends PluginBase implements Listener
